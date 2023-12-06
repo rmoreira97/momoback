@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json()); // To parse JSON bodies
 
 const port = process.env.PORT || 3001;
-const mongoUri = process.env.MONGO_URI;
+const mongoUri = 'mongodb+srv://rafa:test@cluster0.cqlzuua.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
